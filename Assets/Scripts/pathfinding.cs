@@ -30,7 +30,9 @@ public class pathfinding : MonoBehaviour
     public int Pythagorean()
     {
         pythagorean_C = Mathf.Pow(pythagorean_A, 2) + Mathf.Pow(pythagorean_B,2);
-        return Mathf.RoundToInt(pythagorean_C);
+        Debug.Log(pythagorean_A + "A");
+        Debug.Log(pythagorean_B + "B");
+        return Mathf.RoundToInt(Mathf.Pow(pythagorean_C,2));
     }
 
     public int ConvertPosToSingleInt( Vector3 pos)
@@ -47,12 +49,11 @@ public class pathfinding : MonoBehaviour
 
     public int CalculateValue()
     {
+        Debug.Log(pythagorean_C + "C");
+        h = Pythagorean();
+        g =  Mathf.Pow(pythagorean_B,2) - Mathf.Pow(pythagorean_A, 2);
         int value;
-        
-        
-        
-        
-     
-        return value; 
+        f = g + h;
+        return Mathf.RoundToInt(f); 
     }
 }

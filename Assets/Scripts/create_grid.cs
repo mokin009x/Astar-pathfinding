@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.Serialization;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 public class create_grid : MonoBehaviour
 {
     public GameObject badPathScore;
+    public GameObject closedListScore;
     public GameObject goodPathScore;
     public GameObject mediumPathScore;
     public GameObject gridMarker;
@@ -26,7 +28,6 @@ public class create_grid : MonoBehaviour
         currentGridSpace = world0Space;
 
         MakeGrid();
-        pathFindingScript.pythagorean_A = pathFindingScript.ConvertPosToSingleInt(world0Space.transform.position);
     }
 
     // Update is called once per frame
@@ -37,17 +38,17 @@ public class create_grid : MonoBehaviour
 
     public void MakeGrid()
     {
+        currentGridSpacePos = currentGridSpace.transform.position;
         for (var i = 0; i < worldSize; i++)
         {
             var sublist = new List<GameObject>();
 
             for (var j = 0; j < worldSize; j++)
             {
+                Debug.Log(currentGridSpacePos);
                 sublist.Add(currentGridSpace);
-                currentGridSpacePos = currentGridSpace.transform.position + new Vector3(1, 0, 0);/*skipped 0,0,0 reason why its before placeMarker*/
-/*
+                currentGridSpacePos = currentGridSpacePos + new Vector3(1, 0, 0);/*skipped 0,0,0 reason why its before placeMarker*/
                 PlaceMarkers();
-*/
             }
             
             
@@ -63,7 +64,14 @@ public class create_grid : MonoBehaviour
 
     public void PlaceMarkers()
     {
-        Instantiate(gridMarker, currentGridSpace, Quaternion.identity);
+        int value = pathFindingScript.CalculateValue();
+
+        if (value <=200)
+        {
+            Debug.Log(value);
+            gridMarker = mediumPathScore;
+            Instantiate(gridMarker, currentGridSpacePos, Quaternion.identity);
+        }
     }
 
     

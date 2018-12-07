@@ -480,12 +480,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f105ab27a20f844abe2aab0cb6459a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridScript: {fileID: 0}
   f: 0
   g: 0
   h: 0
   pythagorean_A: 0
   pythagorean_B: 0
   pythagorean_C: 0
+  openList: []
+  closedList: []
 --- !u!114 &1784220388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,12 +502,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecbb297b9bc788f4789a3399caee436d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentGridSpace: {x: 0, y: 0, z: 0}
-  customMarker: {fileID: 7328233096352675327, guid: 7023de3a3a34c834ea212304d724e79a,
+  badPathScore: {fileID: 0}
+  goodPathScore: {fileID: 0}
+  mediumPathScore: {fileID: 7379453631749316176, guid: 4fa2e11af2e37cb4b89a8e43da6b619e,
     type: 3}
   gridMarker: {fileID: 8383393804521027003, guid: 642f819366c535642b8f032c9ecbe5cc,
     type: 3}
-  world0Space: {x: 0, y: 0, z: 0}
+  pathFindingScript: {fileID: 0}
+  currentGridSpace: {fileID: 0}
+  currentGridSpacePos: {x: 0, y: 0, z: 0}
+  customMarker: {fileID: 7328233096352675327, guid: 7023de3a3a34c834ea212304d724e79a,
+    type: 3}
+  world0Space: {fileID: 0}
   worldSize: 20
 --- !u!4 &1784220389
 Transform:
