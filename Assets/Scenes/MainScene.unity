@@ -503,16 +503,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   badPathScore: {fileID: 0}
-  goodPathScore: {fileID: 0}
-  mediumPathScore: {fileID: 7379453631749316176, guid: 4fa2e11af2e37cb4b89a8e43da6b619e,
-    type: 3}
-  gridMarker: {fileID: 8383393804521027003, guid: 642f819366c535642b8f032c9ecbe5cc,
-    type: 3}
-  pathFindingScript: {fileID: 0}
+  closedListScore: {fileID: 0}
+  goal: {fileID: 0}
+  start: {fileID: 0}
   currentGridSpace: {fileID: 0}
+  gridMaker: {fileID: 0}
   currentGridSpacePos: {x: 0, y: 0, z: 0}
   customMarker: {fileID: 7328233096352675327, guid: 7023de3a3a34c834ea212304d724e79a,
     type: 3}
+  goodPathScore: {fileID: 0}
+  gridMarker: {fileID: 8383393804521027003, guid: 642f819366c535642b8f032c9ecbe5cc,
+    type: 3}
+  mediumPathScore: {fileID: 7379453631749316176, guid: 4fa2e11af2e37cb4b89a8e43da6b619e,
+    type: 3}
+  pathFindingScript: {fileID: 0}
   world0Space: {fileID: 0}
   worldSize: 20
 --- !u!4 &1784220389

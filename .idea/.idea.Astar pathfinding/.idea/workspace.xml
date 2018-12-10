@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a7116b-4a8c-49a6-94eb-234d42ceaf47" name="Default Changelist" comment="" />
+    <list default="true" id="b0a7116b-4a8c-49a6-94eb-234d42ceaf47" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Astar pathfinding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Astar pathfinding/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Astar pathfinding/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Astar pathfinding/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/create_grid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/create_grid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/pathfinding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/pathfinding.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,33 +23,115 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/pathfinding.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="425">
+              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
               <folding>
-                <element signature="e#0#78#0" expanded="true" />
+                <marker date="1544443170638" expanded="false" signature="6:78" ph="..." />
+                <marker date="1544443170638" expanded="true" signature="120:1662" ph="{...}" />
+                <marker date="1544443170638" expanded="true" signature="678:828" ph="{...}" />
+                <marker date="1544443170638" expanded="true" signature="858:1093" ph="{...}" />
+                <marker date="1544443170638" expanded="true" signature="1145:1323" ph="{...}" />
+                <marker date="1544443170638" expanded="true" signature="1381:1402" ph="{...}" />
+                <marker date="1544443170638" expanded="true" signature="1435:1660" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/create_grid.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <marker date="1544446237270" expanded="false" signature="6:52" ph="..." />
+                <marker date="1544446237270" expanded="true" signature="94:2308" ph="{...}" />
+                <marker date="1544446237270" expanded="true" signature="747:1051" ph="{...}" />
+                <marker date="1544446237270" expanded="true" signature="1117:1306" ph="{...}" />
+                <marker date="1544446237270" expanded="true" signature="1334:2008" ph="{...}" />
+                <marker date="1544446237270" expanded="true" signature="1444:2002" ph="{...}" />
+                <marker date="1544446237270" expanded="true" signature="1553:1835" ph="{...}" />
+                <marker date="1544446237270" expanded="true" signature="2040:2306" ph="{...}" />
+                <marker date="1544446237270" expanded="true" signature="2129:2300" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/gridSpace.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <marker date="1544179369023" expanded="false" signature="6:78" ph="..." />
+                <marker date="1544179369023" expanded="true" signature="118:216" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-10/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2">
+              <caret line="683" column="13" selection-start-line="683" selection-start-column="13" selection-end-line="683" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/System4/Backup folder/System4.100200.nl/css/live/backup5/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="536" column="23" selection-start-line="536" selection-start-column="5" selection-end-line="536" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>current</find>
+      <find>g</find>
+      <find>w</find>
+      <find>mobile</find>
+      <find>convert</find>
+      <find>currentGridSpace</find>
+      <find>calc</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/pathfinding.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/create_grid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/gridSpace.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.cs" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-10/style.css" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/pathfinding.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/create_grid.cs" />
+      </list>
+    </option>
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
       <facet id="riderModule/invalid/Default Android Facet" />
     </ignored-facets>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="138" />
-    <option name="y" value="-24" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="128" />
+    <option name="y" value="72" />
     <option name="width" value="1720" />
     <option name="height" value="857" />
   </component>
@@ -45,14 +140,32 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -61,7 +174,8 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -101,16 +215,28 @@
       <updated>1544188674322</updated>
       <workItem from="1544188681828" duration="85000" />
       <workItem from="1544188824932" duration="4000" />
+      <workItem from="1544188892429" duration="9787000" />
+      <workItem from="1544436140344" duration="6575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89000" />
+    <option name="totallyTimeSpent" value="16451000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="128" y="72" width="1720" height="857" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28554216" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -123,17 +249,17 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32952926" />
       <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Performance Profiler" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="NuGet" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Logcat" order="13" />
+      <window_info anchor="bottom" id="Logcat" order="13" weight="0.32952926" />
       <window_info anchor="bottom" id="Unit Tests" order="14" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
-      <window_info anchor="bottom" id="Version Control" order="16" />
-      <window_info anchor="bottom" id="Unity" order="17" />
+      <window_info anchor="bottom" id="Version Control" order="16" weight="0.32952926" />
+      <window_info anchor="bottom" id="Unity" order="17" weight="0.32952926" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -161,11 +287,75 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <marker date="1544192959191" expanded="true" signature="9:50" ph="{...}" />
+            <marker date="1544192959191" expanded="true" signature="27:48" ph="{...}" />
+            <marker date="1544192959191" expanded="true" signature="80:729" ph="{...}" />
+            <marker date="1544192959191" expanded="true" signature="105:717" ph="{...}" />
+            <marker date="1544192959191" expanded="true" signature="300:711" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/System4/Backup folder/System4.100200.nl/css/live/backup5/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="536" column="23" selection-start-line="536" selection-start-column="5" selection-end-line="536" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-10/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="683" column="13" selection-start-line="683" selection-start-column="13" selection-end-line="683" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/pathfinding.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="425">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
           <folding>
-            <element signature="e#0#78#0" expanded="true" />
+            <marker date="1544443170638" expanded="false" signature="6:78" ph="..." />
+            <marker date="1544443170638" expanded="true" signature="120:1662" ph="{...}" />
+            <marker date="1544443170638" expanded="true" signature="678:828" ph="{...}" />
+            <marker date="1544443170638" expanded="true" signature="858:1093" ph="{...}" />
+            <marker date="1544443170638" expanded="true" signature="1145:1323" ph="{...}" />
+            <marker date="1544443170638" expanded="true" signature="1381:1402" ph="{...}" />
+            <marker date="1544443170638" expanded="true" signature="1435:1660" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gridSpace.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <marker date="1544179369023" expanded="false" signature="6:78" ph="..." />
+            <marker date="1544179369023" expanded="true" signature="118:216" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/create_grid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <marker date="1544446237270" expanded="false" signature="6:52" ph="..." />
+            <marker date="1544446237270" expanded="true" signature="94:2308" ph="{...}" />
+            <marker date="1544446237270" expanded="true" signature="747:1051" ph="{...}" />
+            <marker date="1544446237270" expanded="true" signature="1117:1306" ph="{...}" />
+            <marker date="1544446237270" expanded="true" signature="1334:2008" ph="{...}" />
+            <marker date="1544446237270" expanded="true" signature="1444:2002" ph="{...}" />
+            <marker date="1544446237270" expanded="true" signature="1553:1835" ph="{...}" />
+            <marker date="1544446237270" expanded="true" signature="2040:2306" ph="{...}" />
+            <marker date="1544446237270" expanded="true" signature="2129:2300" ph="{...}" />
           </folding>
         </state>
       </provider>

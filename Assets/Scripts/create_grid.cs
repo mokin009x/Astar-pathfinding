@@ -1,20 +1,21 @@
 ﻿using System.Collections.Generic;
-using System.Runtime.Serialization;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class create_grid : MonoBehaviour
 {
     public GameObject badPathScore;
     public GameObject closedListScore;
-    public GameObject goodPathScore;
-    public GameObject mediumPathScore;
-    public GameObject gridMarker;
-    public pathfinding pathFindingScript;
+    public GameObject goal;
+    public GameObject start;
     public GameObject currentGridSpace;
+    public GameObject gridMaker;
     public Vector3 currentGridSpacePos;
 
     public GameObject customMarker;
+    public GameObject goodPathScore;
+    public GameObject gridMarker;
+    public GameObject mediumPathScore;
+    public pathfinding pathFindingScript;
     public GameObject world0Space;
     public List<List<GameObject>> worldGrid = new List<List<GameObject>>();
     public int worldSize;
@@ -25,20 +26,24 @@ public class create_grid : MonoBehaviour
     {
         pathFindingScript = GameObject.Find("GameManager").GetComponent<pathfinding>();
         world0Space = GameObject.FindGameObjectWithTag("WorldZeroSpace");
-        currentGridSpace = world0Space;
-
+        gridMaker = world0Space;
         MakeGrid();
+        
+        start = worldGrid[0][0];
+        goal = worldGrid[19][19];
+
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) Instantiate(customMarker, worldGrid[Random.Range(0,19)][Random.Range(0,19)].transform.position, Quaternion.identity);
+        if (Input.GetKeyDown(KeyCode.Space))
+            Instantiate(customMarker, worldGrid[Random.Range(0, 19)][Random.Range(0, 19)].transform.position, Quaternion.identity);
     }
 
     public void MakeGrid()
     {
-        currentGridSpacePos = currentGridSpace.transform.position;
+        currentGridSpacePos = gridMaker.transform.position;
         for (var i = 0; i < worldSize; i++)
         {
             var sublist = new List<GameObject>();
@@ -46,13 +51,11 @@ public class create_grid : MonoBehaviour
             for (var j = 0; j < worldSize; j++)
             {
                 Debug.Log(currentGridSpacePos);
-                sublist.Add(currentGridSpace);
-                currentGridSpacePos = currentGridSpacePos + new Vector3(1, 0, 0);/*skipped 0,0,0 reason why its before placeMarker*/
+                sublist.Add(gridMaker);
+                currentGridSpacePos = currentGridSpacePos + new Vector3(1, 0, 0); /*skipped 0,0,0 reason why its before placeMarker*/
                 PlaceMarkers();
             }
-            
-            
-            
+
 
             worldGrid.Add(sublist);
 
@@ -64,15 +67,13 @@ public class create_grid : MonoBehaviour
 
     public void PlaceMarkers()
     {
-        int value = pathFindingScript.CalculateValue();
+        var value = pathFindingScript.CalculateValue();
 
-        if (value <=200)
+        if (value <= 200)
         {
             Debug.Log(value);
             gridMarker = mediumPathScore;
             Instantiate(gridMarker, currentGridSpacePos, Quaternion.identity);
         }
     }
-
-    
 }

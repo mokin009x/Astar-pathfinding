@@ -38,6 +38,7 @@ public class pathfinding : MonoBehaviour
     public int ConvertPosToSingleInt( Vector3 pos)
     {
         var singlePosInt = Mathf.RoundToInt(pos.x) + Mathf.RoundToInt(pos.y) + Mathf.RoundToInt(pos.z);
+        Debug.Log(singlePosInt);
         return singlePosInt;
     }
 
