@@ -10,9 +10,11 @@ public class pathfinding : MonoBehaviour
     public float g;/*is the distance between the current node and the start node*/
     public float h;/*is the heuristic estimated distance from the current node to the end*/
     /* Pythagorean variables*/
-    public float pythagorean_A;
-    public float pythagorean_B;
-    public float pythagorean_C;
+    public Vector3 pythagorean_A;
+    public Vector3 pythagorean_B;
+    public int pythagorean_C;
+    public int posStartSingleInt;
+    public int posEndSingleInt;
 
     public List<GameObject> openList;
     public List<GameObject> closedList;
@@ -29,17 +31,25 @@ public class pathfinding : MonoBehaviour
 
     public int Pythagorean()
     {
-        pythagorean_C = Mathf.Pow(pythagorean_A, 2) + Mathf.Pow(pythagorean_B,2);
+        ConvertPosToSingleInt(pythagorean_A, pythagorean_B);
+        pythagorean_C = Mathf.RoundToInt(Mathf.Pow(posStartSingleInt,2) + Mathf.RoundToInt(Mathf.Pow(posEndSingleInt,2)));
+        
+        
         Debug.Log(pythagorean_A + "A");
         Debug.Log(pythagorean_B + "B");
         return Mathf.RoundToInt(Mathf.Pow(pythagorean_C,2));
     }
 
-    public int ConvertPosToSingleInt( Vector3 pos)
+    public void ConvertPosToSingleInt( Vector3 posStart, Vector3 posEnd)
     {
-        var singlePosInt = Mathf.RoundToInt(pos.x) + Mathf.RoundToInt(pos.y) + Mathf.RoundToInt(pos.z);
-        Debug.Log(singlePosInt);
-        return singlePosInt;
+        posStartSingleInt = Mathf.RoundToInt(posStart.x) + Mathf.RoundToInt(posStart.y) + Mathf.RoundToInt(posStart.z);
+        posEndSingleInt = Mathf.RoundToInt(posEnd.x) + Mathf.RoundToInt(posEnd.y) + Mathf.RoundToInt(posEnd.z);
+        Mathf.RoundToInt(posEndSingleInt);
+        Mathf.RoundToInt(posEndSingleInt);
+
+        Debug.Log(posStartSingleInt);
+        Debug.Log(posEndSingleInt);
+
     }
 
     // Update is called once per frame
@@ -48,11 +58,11 @@ public class pathfinding : MonoBehaviour
         
     }
 
-    public int CalculateValue()
+    public  int CalculateValue()
     {
         Debug.Log(pythagorean_C + "C");
         h = Pythagorean();
-        g =  Mathf.Pow(pythagorean_B,2) - Mathf.Pow(pythagorean_A, 2);
+        g =  posStartSingleInt - posEndSingleInt;
         int value;
         f = g + h;
         return Mathf.RoundToInt(f); 

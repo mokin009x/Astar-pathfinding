@@ -29,7 +29,7 @@ public class create_grid : MonoBehaviour
         gridMaker = world0Space;
         MakeGrid();
         
-        start = worldGrid[0][0];
+        start = worldGrid[1][1];
         goal = worldGrid[19][19];
 
     }
@@ -53,7 +53,6 @@ public class create_grid : MonoBehaviour
                 Debug.Log(currentGridSpacePos);
                 sublist.Add(gridMaker);
                 currentGridSpacePos = currentGridSpacePos + new Vector3(1, 0, 0); /*skipped 0,0,0 reason why its before placeMarker*/
-                PlaceMarkers();
             }
 
 
@@ -63,17 +62,31 @@ public class create_grid : MonoBehaviour
 
             Debug.Log("hoi");
         }
+
+        for (int i = 0; i < worldSize; i++)
+        {
+            for (int j = 0; j < worldSize; j++)
+            {
+                
+                PlaceMarkers(worldGrid[i][j].transform.position);
+            }
+        
+        }
+
     }
 
-    public void PlaceMarkers()
+ 
+
+    public void PlaceMarkers(Vector3 markerPos)
     {
         var value = pathFindingScript.CalculateValue();
+        Debug.Log(markerPos +"markerpos");
 
         if (value <= 200)
         {
             Debug.Log(value);
             gridMarker = mediumPathScore;
-            Instantiate(gridMarker, currentGridSpacePos, Quaternion.identity);
+            Instantiate(gridMarker, markerPos, Quaternion.identity);
         }
     }
 }
