@@ -6,12 +6,11 @@ public class create_grid : MonoBehaviour
     public GameObject badPathScore;
     public GameObject closedListScore;
     public GameObject goal;
+    public GameObject current;
     public GameObject start;
-    public GameObject currentGridSpace;
-    public GameObject gridMaker;
-    public Vector3 currentGridSpacePos;
-
-    public GameObject customMarker;
+    public GameObject gridSpace;
+    public Vector3 currentGridSpacePosDigital;
+    
     public GameObject goodPathScore;
     public GameObject gridMarker;
     public GameObject mediumPathScore;
@@ -26,67 +25,81 @@ public class create_grid : MonoBehaviour
     {
         pathFindingScript = GameObject.Find("GameManager").GetComponent<pathfinding>();
         world0Space = GameObject.FindGameObjectWithTag("WorldZeroSpace");
-        gridMaker = world0Space;
         MakeGrid();
         
-        start = worldGrid[1][1];
+        start = worldGrid[0][0];
+        
         goal = worldGrid[19][19];
-
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            Instantiate(customMarker, worldGrid[Random.Range(0, 19)][Random.Range(0, 19)].transform.position, Quaternion.identity);
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            /*for (int i = 0; i < worldSize; i++)
+            {
+                for (int j = 0; j < worldSize; j++)
+                {
+                    Debug.Log(worldGrid[i][j].transform.position + "worldGrid");    
+                }
+            }       */
+            StartPathFinding();
+        }
     }
 
     public void MakeGrid()
     {
-        currentGridSpacePos = gridMaker.transform.position;
+        currentGridSpacePosDigital = world0Space.transform.position;
         for (var i = 0; i < worldSize; i++)
         {
             var sublist = new List<GameObject>();
 
             for (var j = 0; j < worldSize; j++)
             {
-                Debug.Log(currentGridSpacePos);
-                sublist.Add(gridMaker);
-                currentGridSpacePos = currentGridSpacePos + new Vector3(1, 0, 0); /*skipped 0,0,0 reason why its before placeMarker*/
+/*
+                Debug.Log(currentGridSpacePos + "currentGridSpacePos");
+*/
+                currentGridSpacePosDigital = currentGridSpacePosDigital + new Vector3(1, 0, 0); /*skipped 0,0,0 reason why its before placeMarker*/
+                GameObject placedObj = PlaceMarkers(currentGridSpacePosDigital, gridSpace);
+                sublist.Add(placedObj);
+                
             }
 
 
             worldGrid.Add(sublist);
 
-            currentGridSpacePos = currentGridSpacePos + new Vector3(-worldSize, 0, 1);
+            currentGridSpacePosDigital = currentGridSpacePosDigital + new Vector3(-worldSize, 0, 1);
 
             Debug.Log("hoi");
         }
+    }
 
+    public void StartPathFinding()
+    {
         for (int i = 0; i < worldSize; i++)
         {
             for (int j = 0; j < worldSize; j++)
             {
-                
-                PlaceMarkers(worldGrid[i][j].transform.position);
+                current = worldGrid[i][j];
+                var value = pathFindingScript.CalculateValue();
+                Debug.Log(value + "value");    
             }
-        
         }
-
     }
 
- 
 
-    public void PlaceMarkers(Vector3 markerPos)
+    public GameObject PlaceMarkers(Vector3 markerPos, GameObject gridspaceobj)
     {
-        var value = pathFindingScript.CalculateValue();
+/*
         Debug.Log(markerPos +"markerpos");
+*/
 
-        if (value <= 200)
-        {
-            Debug.Log(value);
-            gridMarker = mediumPathScore;
-            Instantiate(gridMarker, markerPos, Quaternion.identity);
-        }
+        GameObject spawnedObj =Instantiate(gridspaceobj, markerPos, Quaternion.identity);
+        
+            
+        
+
+        return spawnedObj;
     }
 }

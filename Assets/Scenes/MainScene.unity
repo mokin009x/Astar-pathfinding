@@ -484,9 +484,11 @@ MonoBehaviour:
   f: 0
   g: 0
   h: 0
-  pythagorean_A: 0
-  pythagorean_B: 0
+  pythagorean_A: {x: 0, y: 0, z: 0}
+  pythagorean_B: {x: 0, y: 0, z: 0}
   pythagorean_C: 0
+  posStartSingleInt: 0
+  posEndSingleInt: 0
   openList: []
   closedList: []
 --- !u!114 &1784220388
@@ -507,7 +509,8 @@ MonoBehaviour:
   goal: {fileID: 0}
   start: {fileID: 0}
   currentGridSpace: {fileID: 0}
-  gridMaker: {fileID: 0}
+  gridSpace: {fileID: 6648117558292724858, guid: 6ae6a0d2d3ebdb74f86e4a75b9f13d78,
+    type: 3}
   currentGridSpacePos: {x: 0, y: 0, z: 0}
   customMarker: {fileID: 7328233096352675327, guid: 7023de3a3a34c834ea212304d724e79a,
     type: 3}
